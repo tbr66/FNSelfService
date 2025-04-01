@@ -1,4 +1,4 @@
-# LDAP Tool Box Self Service Password
+# FriendlyNet - SelfService Portal
 
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/372/badge)](https://bestpractices.coreinfrastructure.org/projects/372)
 [![Build Status](https://github.com/ltb-project/self-service-password/actions/workflows/ci.yml/badge.svg)](https://github.com/ltb-project/self-service-password/actions/workflows/ci.yml)
@@ -6,11 +6,9 @@
 
 ## Presentation
 
-Self Service Password is a PHP application that allows users to change their password in an LDAP directory.
+Self Service Password is a PHP application that allows users to change their password and other information in the FN LDAP directory.
 
 The application can be used on standard LDAPv3 directories (OpenLDAP, OpenDS, ApacheDS, Sun Oracle DSEE, Novell, etc.) and also on Active Directory.
-
-![Screenshot](https://ltb-project.org/documentation/_images/ssp_1_0_change_password.png)
 
 It has the following features:
 * Samba mode to change Samba passwords

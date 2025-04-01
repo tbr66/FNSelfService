@@ -50,38 +50,3 @@ It has the following features:
 * valid PHP mail server configuration
 * valid PHP session configuration
 
-## Documentation
-
-Documentation is available on https://self-service-password.readthedocs.io/en/latest/
-
-## Docker
-
-We provide an [official Docker image](https://hub.docker.com/r/ltbproject/self-service-password).
-
-Create a minimal configuration file:
-```
-vi ssp.conf.php
-```
-```php
-<?php // My SSP configuration
-$keyphrase = "mysecret";
-$debug = true;
-?>
-```
-
-And run:
-```
-docker run -p 80:80 \
-    -v $PWD/ssp.conf.php:/var/www/conf/config.inc.local.php \
-    -it docker.io/ltbproject/self-service-password:latest
-```
-
-## Download
-
-Tarballs and packages for Debian and Red Hat are available on https://ltb-project.org/download.html
-
-Debian and Red Hat repositories are also available, see [installation instructions](https://self-service-password.readthedocs.io/en/latest/installation.html).
-
-## Source code
-
-Source code is available on https://github.com/ltb-project/self-service-password
